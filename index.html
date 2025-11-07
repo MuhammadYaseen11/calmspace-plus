@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalmSpace+ 🌿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🌿 CalmSpace+</h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <main>
+    <div class="breathing-circle" id="breathing"></div>
+    <p id="breathe-text">Inhale...</p>
+
+    <button id="quote-btn">✨ New Affirmation</button>
+    <p id="quote"></p>
+
+    <div class="music-controls">
+      <label for="music-select">🎵 Choose Music:</label>
+      <select id="music-select">
+        <option value="https://www.orangefreesounds.com/wp-content/uploads/2016/06/Rain-ambience.mp3">🌧 Rain Sounds</option>
+<!-- Ocean Waves -->
+<option value="https://orangefreesounds.com/wp-content/uploads/2025/09/Ocean-waves-ambience-sound-effect.mp3">🌊 Ocean Waves (Ambience)</option>
+<!-- Alternative ocean waves version -->
+<option value="https://orangefreesounds.com/wp-content/uploads/2022/07/Ocean-waves-sound-effect.mp3">🌊 Ocean Waves (Effect)</option>
+
+<!-- Meditation Bell -->
+<option value="https://orangefreesounds.com/wp-content/uploads/2018/03/Meditation-bell-sound.mp3">🧘 Meditation Bell</option>
+<!-- Another bell / singing bowl style -->
+<option value="https://orangefreesounds.com/wp-content/uploads/2024/01/Meditation-singing-bowl-sound.mp3">🧘 Meditation Singing Bowl</option>
+      </select>
+      <button id="music-btn">▶ Play</button>
+    </div>
+
+    <canvas id="bubbleCanvas"></canvas>
+  </main>
+
+  <footer>
+    <p>Take a deep breath. You deserve peace. 💖</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+:root {
+  --bg1: #a1c4fd;
+  --bg2: #c2e9fb;
+  --text: #222;
+}
+
+body.dark {
+  --bg1: #0f172a;
+  --bg2: #1e293b;
+  --text: #f8fafc;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 2s ease, color 0.3s;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  background: rgba(255,255,255,0.3);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+.breathing-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: breathe 8s infinite;
+  box-shadow: 0 0 50px rgba(255,255,255,0.3);
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
+
+#breathe-text {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+#quote {
+  margin-top: 20px;
+  font-style: italic;
+  max-width: 400px;
+  text-align: center;
+}
+
+.music-controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+#bubbleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+}
