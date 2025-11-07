@@ -13,8 +13,8 @@ const quotes = [
 
 let phase = 0;
 setInterval(() => {
-  phase = (phase + 1) % 4;
-  breatheText.textContent = ["Inhale...", "Hold...", "Exhale...", "Hold..."][phase];
+  phase = (phase + 1) % 2;
+  breatheText.textContent = ["Inhale...", "Exhale..."][phase];
 }, 4000);
 
 // Affirmation Button
@@ -103,3 +103,4 @@ window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
+
